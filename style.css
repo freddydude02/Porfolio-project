@@ -1,0 +1,13 @@
+body {
+    background-color: lightsteelblue;
+}
+.top-nav {
+    display: flex;
+    justify-content: space-around;
+    border: solid steelblue;
+    border-radius: 8px;
+    padding: 3px;
+}
+.top-nav a {
+    text-decoration: none;
+}

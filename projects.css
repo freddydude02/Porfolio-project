@@ -1,0 +1,9 @@
+div img {
+    height: 300px;
+    width: 650px;
+}
+main {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
