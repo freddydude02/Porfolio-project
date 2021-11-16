@@ -1,0 +1,34 @@
+@use "themes";
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.view-port {
+    background-color: $primaryThemeColor;
+    height: 100vw;
+    width: 100vw;
+}
+.top-container {
+    display: flex;
+    height: 30vh;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+
+        &--right {
+            width: 40vw;
+        }
+        &--left {
+            width: 60vw;
+            justify-content: space-evenly;
+        }
+    }
+    &__link {
+        color: $SecondaryThemeColor;
+
+        &--important {
+            font-size: 100px;
+        }
+    }
+}
