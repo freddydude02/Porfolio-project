@@ -3,8 +3,8 @@
     padding: 0px;
     margin: 0px;
 }
-.view-port {
-    background-color: $primaryThemeColor;
+.page {
+    background-color: themes.$primaryThemeColor;
     height: 100vw;
     width: 100vw;
 }
@@ -25,7 +25,7 @@
         }
     }
     &__link {
-        color: $SecondaryThemeColor;
+        color: themes.$SecondaryThemeColor;
 
         &--important {
             font-size: 100px;

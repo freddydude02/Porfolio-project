@@ -1,7 +1,7 @@
-@import "themes";
-@import "index";
-@import "abouts";
-@import "contact";
-@import "project";
-@import "skills";
-@import "frame";
+@use "themes";
+@use "frame";
+@use "./pages/index";
+@use "./pages/abouts";
+@use "./pages/contact";
+@use "./pages/project";
+@use "./pages/skills";
