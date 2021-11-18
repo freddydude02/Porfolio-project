@@ -1,0 +1,49 @@
+@use "theme";
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.container {
+    display: flex;
+    padding: 0 70px;
+    &--top {
+        background-color: theme.$SecondaryThemeColor;
+        height: 100px;
+    }
+    &--projects {
+        @include flex(column, space-evenly, center);
+    }
+
+    &__nav {
+        @include flex(row, unset, center);
+
+        &--right {
+            width: 60vw;
+        }
+        &--left {
+            width: 40vw;
+            justify-content: space-evenly;
+        }
+    }
+    &__btn {
+        color: theme.$primaryThemeColor;
+
+        &--important {
+            font-size: 50px;
+        }
+        &--border {
+            border: solid theme.$primaryThemeColor;
+            border-radius: 15px;
+            padding: 3px 7px;
+        }
+    }
+
+    &__img {
+        height: 300px;
+        width: 650px;
+    }
+}
