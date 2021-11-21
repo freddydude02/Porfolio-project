@@ -15,6 +15,9 @@ $desktopxxl: 1400px;
     }
 }
 @mixin mqdesktop {
+    @media screen and (min-width: $desktop) {
+        @content;
+    }
 }
 @mixin mqdesktopxl {
     @media screen and (min-width: $desktopxl) {

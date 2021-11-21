@@ -1,4 +1,5 @@
 @use "theme";
+@use "media";
 
 @mixin flex($direction, $justify, $align) {
     display: flex;
@@ -6,34 +7,77 @@
     justify-content: $justify;
     align-items: $align;
 }
+.page {
+    @include flex(column, unset, center);
+    background-color: theme.$primaryThemeColor;
+    height: 100vw;
+    width: 100vw;
+    @include media.mqtablet {
+        @include flex(row, unset, unset);
+    }
+}
 
 .container {
-    display: flex;
-    padding: 0 70px;
+    @include flex(column, unset, unset);
+    width: 100%;
+    // height: auto;
+    // padding: ;
+    @include media.mqtablet {
+        padding-top: 50px;
+        margin-left: 220px;
+    }
+
     &--top {
+        @include flex(column, space-evenly, unset);
         background-color: theme.$SecondaryThemeColor;
         height: 100px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px 0px;
+
+        @include media.mqtablet {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            margin: 0px;
+        }
     }
     &--projects {
-        @include flex(column, space-evenly, center);
+        @include flex(column, space-evenly, unset);
+        // margin-top: 20px;
     }
 
     &__nav {
         @include flex(row, unset, center);
 
-        &--right {
-            width: 60vw;
+        @include media.mqtablet {
+            @include flex(column, space-evenly, center);
         }
-        &--left {
-            width: 40vw;
+
+        &--namebox {
+            width: 100%;
+            justify-content: center;
+
+            @include media.mqtablet {
+                @include flex(column, space-evenly, center);
+                height: 20%;
+            }
+        }
+        &--listbox {
             justify-content: space-evenly;
+            width: 100%;
+
+            @include media.mqtablet {
+                @include flex(column, space-evenly, center);
+                height: 80%;
+            }
         }
     }
     &__btn {
         color: theme.$primaryThemeColor;
 
         &--important {
-            font-size: 50px;
+            font-size: 30px;
         }
         &--border {
             border: solid theme.$primaryThemeColor;
@@ -43,7 +87,20 @@
     }
 
     &__img {
-        height: 300px;
-        width: 650px;
+        height: 175px;
+        width: 350px;
+
+        @include media.mqtablet {
+            height: 200px;
+            width: 400px;
+        }
+
+        @include media.mqdesktop {
+            height: 300px;
+            width: 700px;
+        }
+    }
+    &__card {
+        @include flex(column, center, center);
     }
 }
