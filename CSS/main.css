@@ -7,7 +7,7 @@
 }
 
 p {
-  color: #8a8989;
+  color: #7a5912c0;
 }
 
 h1,
@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #996d0dbb;
+  color: #867437;
 }
 
 .page {
@@ -24,7 +24,7 @@ h6 {
   flex-direction: column;
   justify-content: unset;
   align-items: center;
-  background-color: #f1cead;
+  background-color: #e4d6b0de;
   height: 100vw;
   width: 100vw;
 }
@@ -55,7 +55,7 @@ h6 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: unset;
-  background-color: #996d0dbb;
+  background-color: #685325c0;
   height: 100px;
   width: 100%;
   margin-bottom: 20px;
@@ -115,14 +115,16 @@ h6 {
     height: 80%;
   }
 }
-.container__btn {
-  color: #f1cead;
-}
-.container__btn--important {
+.container__head-text {
   font-size: 30px;
+  color: #d1c558;
+}
+.container__btn {
+  color: #f9fabbb4;
+  background-color: #ad8839c0;
 }
 .container__btn--border {
-  border: solid #f1cead;
+  border: solid #ad8839c0;
   border-radius: 15px;
   padding: 3px 7px;
 }

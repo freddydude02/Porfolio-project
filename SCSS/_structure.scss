@@ -9,7 +9,7 @@
 }
 .page {
     @include flex(column, unset, center);
-    background-color: theme.$primaryThemeColor;
+    background-color: theme.$primaryContainer;
     height: 100vw;
     width: 100vw;
     @include media.mqtablet {
@@ -29,7 +29,7 @@
 
     &--top {
         @include flex(column, space-evenly, unset);
-        background-color: theme.$SecondaryThemeColor;
+        background-color: theme.$primary;
         height: 100px;
         width: 100%;
         margin-bottom: 20px;
@@ -73,14 +73,16 @@
             }
         }
     }
+    &__head-text {
+        font-size: 30px;
+        color: theme.$strong;
+    }
     &__btn {
-        color: theme.$primaryThemeColor;
+        color: theme.$onWeak;
+        background-color: theme.$onPrimary;
 
-        &--important {
-            font-size: 30px;
-        }
         &--border {
-            border: solid theme.$primaryThemeColor;
+            border: solid theme.$onPrimary;
             border-radius: 15px;
             padding: 3px 7px;
         }

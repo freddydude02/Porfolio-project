@@ -1,6 +1,21 @@
-$primaryThemeColor: #f1cead;
-$SecondaryThemeColor: #996d0dbb;
-$ContrastThemeColor: #8a8989;
+$primary: #685325c0;
+$onPrimary: #ad8839c0;
+$primaryContainer: #e4d6b0de;
+$onPrimaryContainer: #7a5912c0;
+$secondary: #a58e4fbb;
+$onSecondary: #d8d0bebb;
+$secondaryContainer: #e0d6bfbb;
+$onSecondaryContainer: #7a7976bb;
+$tertiary: #387dcc;
+$onTertiary: #88b4e7;
+$tertiaryContainer: #93c3d1;
+$onTertiaryContainer: #6e8a92;
+$strong: rgb(209, 197, 88);
+$onStrong: black;
+$strongContainer: white;
+$onStrongContainer: black;
+$weak: #867437;
+$onWeak: #f9fabbb4;
 
 * {
     padding: 0px;
@@ -11,7 +26,7 @@ $ContrastThemeColor: #8a8989;
 }
 
 p {
-    color: $ContrastThemeColor;
+    color: $onPrimaryContainer;
 }
 h1,
 h2,
@@ -19,5 +34,5 @@ h3,
 h4,
 h5,
 h6 {
-    color: $SecondaryThemeColor;
+    color: $weak;
 }
