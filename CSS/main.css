@@ -25,7 +25,7 @@ h6 {
   justify-content: unset;
   align-items: center;
   background-color: #e4d6b0de;
-  height: 100vw;
+  height: 100vh;
   width: 100vw;
 }
 @media screen and (min-width: 768px) {
@@ -34,6 +34,16 @@ h6 {
     flex-direction: row;
     justify-content: unset;
     align-items: unset;
+    height: 100vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .page {
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+    align-items: unset;
+    height: 100vw;
   }
 }
 
@@ -42,7 +52,9 @@ h6 {
   flex-direction: column;
   justify-content: unset;
   align-items: unset;
-  width: 100%;
+  width: fit-content;
+  height: 100%;
+  padding: 0px 40px;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -74,12 +86,15 @@ h6 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: unset;
+  justify-self: center;
+  width: 100%;
 }
 .container__nav {
   display: flex;
   flex-direction: row;
   justify-content: unset;
   align-items: center;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .container__nav {
@@ -90,7 +105,6 @@ h6 {
   }
 }
 .container__nav--namebox {
-  width: 100%;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
@@ -104,7 +118,6 @@ h6 {
 }
 .container__nav--listbox {
   justify-content: space-evenly;
-  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .container__nav--listbox {
@@ -120,13 +133,16 @@ h6 {
   color: #d1c558;
 }
 .container__btn {
-  color: #f9fabbb4;
   background-color: #ad8839c0;
+  color: #d1c558;
 }
 .container__btn--border {
-  border: solid #ad8839c0;
   border-radius: 15px;
   padding: 3px 7px;
+}
+.container__btn--active:hover {
+  background-color: #d1c558;
+  color: #ad8839c0;
 }
 .container__img {
   height: 175px;
@@ -140,7 +156,7 @@ h6 {
 }
 @media screen and (min-width: 992px) {
   .container__img {
-    height: 300px;
+    height: 350px;
     width: 700px;
   }
 }

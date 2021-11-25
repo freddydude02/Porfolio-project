@@ -10,18 +10,23 @@
 .page {
     @include flex(column, unset, center);
     background-color: theme.$primaryContainer;
-    height: 100vw;
+    height: 100vh;
     width: 100vw;
     @include media.mqtablet {
         @include flex(row, unset, unset);
+        height: 100vw;
+    }
+    @include media.mqdesktop {
+        @include flex(row, unset, unset);
+        height: 100vw;
     }
 }
 
 .container {
     @include flex(column, unset, unset);
-    width: 100%;
-    // height: auto;
-    // padding: ;
+    width: fit-content;
+    height: 100%;
+    padding: 0px 40px;
     @include media.mqtablet {
         padding-top: 50px;
         margin-left: 220px;
@@ -44,18 +49,20 @@
     }
     &--projects {
         @include flex(column, space-evenly, unset);
+        justify-self: center;
+        width: 100%;
         // margin-top: 20px;
     }
 
     &__nav {
         @include flex(row, unset, center);
+        width: 100%;
 
         @include media.mqtablet {
             @include flex(column, space-evenly, center);
         }
 
         &--namebox {
-            width: 100%;
             justify-content: center;
 
             @include media.mqtablet {
@@ -65,7 +72,6 @@
         }
         &--listbox {
             justify-content: space-evenly;
-            width: 100%;
 
             @include media.mqtablet {
                 @include flex(column, space-evenly, center);
@@ -78,13 +84,16 @@
         color: theme.$strong;
     }
     &__btn {
-        color: theme.$onWeak;
         background-color: theme.$onPrimary;
+        color: theme.$strong;
 
         &--border {
-            border: solid theme.$onPrimary;
             border-radius: 15px;
             padding: 3px 7px;
+        }
+        &--active:hover {
+            background-color: theme.$strong;
+            color: theme.$onPrimary;
         }
     }
 
@@ -98,7 +107,7 @@
         }
 
         @include media.mqdesktop {
-            height: 300px;
+            height: 350px;
             width: 700px;
         }
     }
