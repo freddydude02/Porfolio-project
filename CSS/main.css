@@ -216,7 +216,7 @@ a {
 .container__card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: unset;
   align-items: center;
 }
 .container__card--contact {
@@ -224,4 +224,15 @@ a {
   height: 400px;
   border-radius: 15px;
   background-color: #58544454;
+}
+.container__card--title {
+  height: 10%;
+  justify-content: center;
+}
+.container__card--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: unset;
+  height: 90%;
 }

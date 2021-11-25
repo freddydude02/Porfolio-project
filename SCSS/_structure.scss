@@ -147,13 +147,21 @@
         }
     }
     &__card {
-        @include flex(column, center, center);
+        @include flex(column, unset, center);
 
         &--contact {
             width: 400px;
             height: 400px;
             border-radius: 15px;
             background-color: theme.$variable;
+        }
+        &--title {
+            height: 10%;
+            justify-content: center;
+        }
+        &--text {
+            @include flex(column, space-evenly, unset);
+            height: 90%;
         }
     }
 }
