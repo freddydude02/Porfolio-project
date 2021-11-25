@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+i {
+  color: #b4ad94cb;
+}
+
 p {
   color: #b4ad94bb;
 }
@@ -15,7 +19,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a {
   color: #b4ad94cb;
 }
 
@@ -25,7 +30,7 @@ h6 {
   justify-content: unset;
   align-items: center;
   background-image: url(../project-images/stars.jpg);
-  background-size: 1500px;
+  background-size: 2250px;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
@@ -79,13 +84,17 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: unset;
-  align-items: unset;
+  align-items: center;
   margin: 0px 40px;
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 180vh;
 }
 @media screen and (min-width: 768px) {
   .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
     height: 100vw;
     margin-left: 200px;
   }
@@ -111,8 +120,8 @@ h6 {
 .container--projects {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: unset;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
@@ -166,9 +175,15 @@ h6 {
   border-radius: 15px;
   padding: 3px 7px;
 }
-.container__btn--active:hover {
+.container__btn--active {
+  background-color: #58544454;
+}
+.container__btn--hover:hover {
   background-color: #b4ad94;
-  color: #f1f1f1;
+  color: black;
+}
+.container__btn--onclick:active {
+  background-color: #88b4e7;
 }
 .container__img {
   height: 175px;
@@ -201,6 +216,23 @@ h6 {
 .container__card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: unset;
   align-items: center;
+}
+.container__card--contact {
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+  background-color: #58544454;
+}
+.container__card--title {
+  height: 10%;
+  justify-content: center;
+}
+.container__card--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: unset;
+  height: 90%;
 }
