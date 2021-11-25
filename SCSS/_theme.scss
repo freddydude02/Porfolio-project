@@ -16,6 +16,7 @@ $strongContainer: white;
 $onStrongContainer: rgb(250, 240, 240);
 $weak: #b4ad94cb;
 $onWeak: #585444;
+$variable: #58544454;
 
 * {
     padding: 0px;
@@ -24,7 +25,9 @@ $onWeak: #585444;
     list-style-type: none;
     text-decoration: none;
 }
-
+i {
+    color: $weak;
+}
 p {
     color: $onPrimaryContainer;
 }
@@ -33,6 +36,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a {
     color: $weak;
 }
