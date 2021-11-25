@@ -1,8 +1,8 @@
-$primary: #685325c0;
-$onPrimary: #ad8839c0;
-$primaryContainer: #e4d6b0de;
-$onPrimaryContainer: #7a5912c0;
-$secondary: #a58e4fbb;
+$primary: #14141470;
+$onPrimary: #b4ad94;
+$primaryContainer: #111111;
+$onPrimaryContainer: #b4ad94bb;
+$secondary: #ddd6c2bb;
 $onSecondary: #d8d0bebb;
 $secondaryContainer: #e0d6bfbb;
 $onSecondaryContainer: #7a7976bb;
@@ -10,12 +10,12 @@ $tertiary: #387dcc;
 $onTertiary: #88b4e7;
 $tertiaryContainer: #93c3d1;
 $onTertiaryContainer: #6e8a92;
-$strong: rgb(209, 197, 88);
-$onStrong: black;
+$strong: rgb(0, 0, 0);
+$onStrong: rgb(241, 241, 241);
 $strongContainer: white;
-$onStrongContainer: black;
-$weak: #867437;
-$onWeak: #f9fabbb4;
+$onStrongContainer: rgb(250, 240, 240);
+$weak: #b4ad94cb;
+$onWeak: #585444;
 
 * {
     padding: 0px;
