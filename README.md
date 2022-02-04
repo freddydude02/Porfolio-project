@@ -1,6 +1,3 @@
 # Porfolio-project:
 
-this is my current portfolio project due one the 26thNOV
-
-add nav trick
-check designs
+this is my current portfolio project soon to refactor using react
